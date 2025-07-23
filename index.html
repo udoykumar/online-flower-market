@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,22 +8,44 @@
     <!-- css link  -->
     <link rel="stylesheet" href="./style/style.css">
     <!-- font awesome icon link  -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
+
 <body>
     <div class="container">
-        <nav>
+        <nav class="navbar flex">
             <img src="assets/logo.png" alt="" class="logo">
-            <div class="nav-link-container">
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Shop</a></li>
-                    <li><a href="#">About Us</a></li>
+            <div class="nav-link-container flex">
+                <ul class="flex">
+                    <li><a class="active" href="#">Home</a></li>
+                    <li><a class="normal-link" href="#">Shop</a></li>
+                    <li><a class="normal-link" href="#">About Us</a></li>
                 </ul>
-
-                <p>Cart($56)</p>
+                <div class="icon flex">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <p>Cart ($56)</p>
+                </div>
             </div>
         </nav>
+        <main>
+            <section>
+                <div class="fresh-flower-container flex">
+                    <div class="left">
+                        <h1 class="fresh-title">ALWAYS <span> FRESH Flowers</span></h1>
+                        <p class="description">Indulge your senses with the beauty and fragrance of our fresh flower
+                            shop. From classic roses to exotic blooms, we offer a wide variety of fresh flowers that are
+                            perfect for any occasion. </p>
+                    </div>
+                    <div class="right">
+                        <img src="./assets/hero-flower.png" alt="" class="fresh-flower-img">
+                    </div>
+                </div>
+            </section>
+        </main>
+
     </div>
 </body>
+
 </html>
