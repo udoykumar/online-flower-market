@@ -1,3 +1,4 @@
+/* our plant section style  */
 .card button {
     background-color: #E95A08;
     border: none;
@@ -7,6 +8,7 @@
     cursor: pointer;
 }
 
+/* flower and plant lover section style  */
 .flower-lover-container {
     margin: 100px 0;
     position: relative;
@@ -18,75 +20,45 @@
     right: 600px;
 }
 
-/* .latest-deals-img {
-    height: 400px;
-} */
-
-/* .-img {
-    background-repeat: no-repeat;
-    background-size: 100%;
+/* latest deals section style  */
+.deal-img-container {
     width: 100%;
-    height: 206px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 15px;
-    gap: 10;
-    position: relative;
-} */
+    height: 100%;
+}
 
-.discount-img::after {
+.images-box {
+    position: relative;
+}
+
+.images-box img {
+    border-radius: 20px;
+    width: 100%;
+    height: 100%;
+}
+
+.images-box::after {
     content: '';
     position: absolute;
     width: 100%;
     height: 100%;
     top: 0;
     left: 0;
-    background-color: rgba(0, 0, 0, 0.5);
-    border-radius: 15px;
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 20px;
 }
 
-
-.img1 {
-    position: relative;
-}
-
-.img-text {
+.img-text-content {
+    width: 100%;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;
-    font-size: 15px;
+    font-size: 25px;
     font-weight: bold;
     text-align: center;
+    z-index: 100;
 }
-
-/* .second-discount::after {
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    background-color: rgba(0, 0, 0, 0.5);
-    z-index: 10;
-} */
-
-.third-discount {
-    background-image: url("./assets/deal-zabo.png");
-}
-
-/* .third-discount::after {
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    background-color: rgba(0, 0, 0, 0.5);
-    z-index: 10;
-} */
 
 .text {
     position: absolute;
@@ -96,6 +68,7 @@
     color: rgb(255, 255, 255);
 }
 
+/* join bunch section style  */
 .join-bunch-container {
     position: relative;
     background-image: url("./assets/news-letter-bg.png");
@@ -132,9 +105,9 @@
     padding: 20px;
     color: #fff;
     font-size: 20px;
-
 }
 
+/* footer section style  */
 .footer-logo img {
     width: 180px;
     height: 109px;
@@ -145,8 +118,6 @@
     font-size: 20px;
     color: rgba(0, 0, 0, 0.5);
 }
-
-
 
 .footer-icon img {
     width: 50px;

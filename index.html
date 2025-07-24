@@ -17,10 +17,11 @@
 </head>
 
 <body>
+    <!-- navbar section  -->
     <nav class="flex justify-between items-center h-30 lg:max-w-7xl max-w-lg mx-auto">
         <img src="assets/logo.png" alt="" class="">
-        <div class="nav-link-container flex text-lg">
-            <ul class="hidden lg:flex lg:mr-11 gap-x-6 lg:block">
+        <div class="nav-link-container flex text-lg ">
+            <ul class="hidden lg:flex lg:mr-11 gap-x-6 lg:block lg:text-xl">
                 <li class="font-bold"><a href="#">Home</a></li>
                 <li class=""><a href="#">Shop</a></li>
                 <li class=""><a href="#">About Us</a></li>
@@ -128,7 +129,7 @@
                     <img class="trusted-badge opacity-0 lg:opacity-100 w-sm " src="./assets/trusted-badge.png" alt="">
                     <div class="flower-lover-text">
                         <h1 class="text-4xl lg:text-6xl font-bold my-6">Flower & Plants <br> Lover</h1>
-                        <ul class="mb-50 lg:mb-0">
+                        <ul class="mb-10 lg:mb-0">
                             <li
                                 class="list-disc list-outside ml-5 text-lg lg:text-2xl text-justify mt-8 text-[rgba(0,0,0,0.5)]">
                                 Indulge your senses with the beauty and fragrance of our
@@ -151,7 +152,7 @@
             </section>
             <!-- latest deals section  -->
             <section>
-                <div class="latest-deals-container">
+                <div class="latest-deals-container w-full">
                     <div>
                         <h1 class="text-4xl text-center font-bold lg:text-5xl">Latest <span class="text-[#E95A08]"
                                 S>Deals</span></h1>
@@ -160,27 +161,27 @@
                             with the beauty and fragrance of our fresh flower shop. From classic
                             roses to exotic blooms, we offer a wide variety of fresh.</p>
                     </div>
-                    <div class="latest-deals-img lg:flex lg:gap-10">
-                        <div class="first-img">
-                            <div class="img1">
-                                <img class="imagess mb-5" src="./assets/deal-bloom.png" alt="">
-                                <div class="img-text">
+                    <div class="deal-img-container lg:flex lg:gap-10">
+                        <div class="deal-img flex flex-col gap-5">
+                            <div class="images-box">
+                                <img class="imagess width-full h-full " src="./assets/deal-bloom.png" alt="">
+                                <div class="img-text-content">
                                     <h1>60% Off | Bloom Plant</h1>
                                     <button>Shop Now</button>
                                 </div>
                             </div>
-                            <div class="img1">
-                                <img src="./assets/deal-ana.png" alt="">
-                                <div class="img-text">
+                            <div class="images-box">
+                                <img class="w-full" src="./assets/deal-ana.png" alt="">
+                                <div class="img-text-content">
                                     <h1>30% Off | Ana Plant</h1>
                                     <button>Shop Now</button>
                                 </div>
                             </div>
                         </div>
-                        <div class="second-img">
-                            <div class="img1">
-                                <img src="./assets/deal-zabo.png" alt="">
-                                <div class="img-text big-img-text">
+                        <div class="deal-zabo-img">
+                            <div class="images-box">
+                                <img class="mt-5 lg:mt-0" src="./assets/deal-zabo.png" alt="">
+                                <div class="img-text-content big-img-text">
                                     <h1>25% Off | Zabo Plant</h1>
                                     <button>Shop Now</button>
                                 </div>
@@ -190,8 +191,9 @@
                 </div>
             </section>
         </div>
+        <!-- join bunch section  -->
         <section>
-            <div class="join-bunch-container my-20">
+            <div class="join-bunch-container my-10">
                 <div class="search-bar w-full text-center ">
                     <h1 class="text-2xl lg:text-4xl text-center mb-10 font-bold text-white">Join the colorful Bunch</h1>
                     <input class="join-input bg-white py-5 text-xl" type="text" placeholder="write your Email">
@@ -201,6 +203,7 @@
 
         </section>
     </main>
+    <!-- footer section  -->
     <footer class="lg:max-w-7xl max-w-lg mx-auto lg:flex lg:justify-between lg:items-center">
         <div class="footer-logo w-70">
             <img class="pointer" src="./assets/logo.png" alt="">
