@@ -6,40 +6,112 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Online Flower Market</title>
     <!-- css link  -->
-    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./style.css">
     <!-- font awesome icon link  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
         integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- tailwind css cdn link  -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 
 <body>
-    <div class="container">
-        <nav class="navbar flex">
-            <img src="assets/logo.png" alt="" class="logo">
-            <div class="nav-link-container flex">
-                <ul class="flex">
-                    <li><a class="active" href="#">Home</a></li>
-                    <li><a class="normal-link" href="#">Shop</a></li>
-                    <li><a class="normal-link" href="#">About Us</a></li>
+    <div class="lg:max-w-7xl max-w-lg mx-auto">
+        <nav class="flex justify-between items-center h-30">
+            <img src="assets/logo.png" alt="" class="">
+            <div class="nav-link-container flex text-lg">
+                <ul class="hidden lg:flex lg:mr-11 gap-x-6 lg:block">
+                    <li class="font-bold"><a href="#">Home</a></li>
+                    <li class=""><a href="#">Shop</a></li>
+                    <li class=""><a href="#">About Us</a></li>
                 </ul>
-                <div class="icon flex">
-                    <i class="fa-solid fa-cart-shopping"></i>
+                <div class="flex gap-3">
+                    <i class="fa-solid fa-cart-shopping text-red-400"></i>
                     <p>Cart ($56)</p>
                 </div>
             </div>
         </nav>
         <main>
-            <section>
-                <div class="fresh-flower-container flex">
-                    <div class="left">
-                        <h1 class="fresh-title">ALWAYS <span> FRESH Flowers</span></h1>
-                        <p class="description">Indulge your senses with the beauty and fragrance of our fresh flower
+            <!-- fresh flower section  -->
+            <section class="">
+                <div class="lg:flex lg:flex-row-reverse lg:items-end">
+                    <div class="">
+                        <img src="./assets/hero-flower.png" alt="" class=" lg:shrink-">
+                    </div>
+                    <div class="">
+                        <h1 class="text-6xl font-bold mt-10 lg:text-8xl">ALWAYS <span class="text-[#E95A08]"> FRESH
+                                FLOWERS</span>
+                        </h1>
+                        <p class="text-lg text-justify mt-8 text-[rgba(0,0,0,0.5)] lg:max-w-2xl">Indulge your senses
+                            with the beauty
+                            and
+                            fragrance
+                            of
+                            our fresh
+                            flower
                             shop. From classic roses to exotic blooms, we offer a wide variety of fresh flowers that are
                             perfect for any occasion. </p>
                     </div>
-                    <div class="right">
-                        <img src="./assets/hero-flower.png" alt="" class="fresh-flower-img">
+                </div>
+            </section>
+
+            <!-- our plants section -->
+            <section class="my-9">
+                <div class="text-4xl text-center font-bold"><span class="text-[#E95A08]">Our</span> Plants</div>
+                <div class="text-lg text-justify my-5 text-[rgba(0,0,0,0.5)]">Indulge your senses with the beauty and
+                    fragrance of our
+                    fresh
+                    flower shop.
+                    From classic roses to exotic blooms, we offer a wide variety of fresh.</div>
+                <div class="grid grid-cols-2 gap-4 ">
+                    <div class="card">
+                        <img src="./assets/sample-flower-image.png" alt="">
+                        <p class="text-center textxl">Lily Blossom</p>
+                        <p class="text-center font-bold text-xl">20 USD</p>
+                        <button class="bg-[#E95A08] border-none p-4 w-full text-white">ADD TO CARD</button>
+                    </div>
+                    <div class="card">
+                        <img src="./assets/sample-flower-image.png" alt="">
+                        <p class="text-xl text-center">Lily Blossom</p>
+                        <p class="text-xl text-center font-bold">20 USD</p>
+                        <button class="bg-[#E95A08] border-none p-4 w-full text-white">ADD TO CARD</button>
+                    </div>
+                    <div class="card">
+                        <img src="./assets/sample-flower-image.png" alt="">
+                        <p class="text-xl text-center">Lily Blossom</p>
+                        <p class="text-xl text-center font-bold">20 USD</p>
+                        <button class="bg-[#E95A08] border-none p-4 w-full text-white">ADD TO CARD</button>
+                    </div>
+                    <div class="card">
+                        <img src="./assets/sample-flower-image.png" alt="">
+                        <p class="text-xl text-center">Lily Blossom</p>
+                        <p class="text-xl text-center font-bold">20 USD</p>
+                        <button class="bg-[#E95A08] border-none p-4 w-full text-white">ADD TO CARD</button>
+                    </div>
+                    <div class="card">
+                        <img src="./assets/sample-flower-image.png" alt="">
+                        <p class="text-xl text-center">Lily Blossom</p>
+                        <p class="text-xl text-center font-bold">20 USD</p>
+                        <button class="bg-[#E95A08] border-none p-4 w-full text-white">ADD TO CARD</button>
+                    </div>
+                    <div class="card">
+                        <img src="./assets/sample-flower-image.png" alt="">
+                        <p class="text-xl text-center">Lily Blossom</p>
+                        <p class="text-xl text-center font-bold">20 USD</p>
+                        <button class="bg-[#E95A08] border-none p-4 w-full text-white">ADD TO CARD</button>
+                    </div>
+                    <div class="card">
+                        <img src="./assets/sample-flower-image.png" alt="">
+                        <p class="text-xl text-center">Lily Blossom</p>
+                        <p class="text-xl text-center font-bold">20 USD</p>
+                        <button class="bg-[#E95A08] border-none p-4 w-full text-white">ADD TO CARD</button>
+                    </div>
+                    <div class="card">
+                        <img src="./assets/sample-flower-image.png" alt="">
+                        <p class="text-xl text-center">Lily Blossom</p>
+                        <p class="text-xl text-center font-bold">20 USD</p>
+                        <button class="bg-[#E95A08] border-none p-4 w-full text-white">ADD TO CARD</button>
                     </div>
                 </div>
             </section>
